@@ -1,0 +1,26 @@
+.notice {
+    position: relative;
+    max-width: 420px;
+    padding: 16px;
+    padding-right: 52px;
+    border: 1px solid #10b981;
+    border-radius: 8px;
+    background-color: #ecfdf5;
+}
+
+.notice__text {
+    margin: 0;
+}
+
+.notice__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background-color: #d1fae5;
+    font-size: 18px;
+    cursor: pointer;
+}

@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin: 0 auto;
+    padding-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 36px;
+}
+
+.nav-links a {
+    color: rgba(152, 147, 163, 1);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-links a:hover {
+    color: rgba(47, 46, 65, 1);
+}
+
+.actions {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    padding: 16px 30px;
+    border: 1px solid rgba(108, 99, 255, 1);
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn-primary {
+    color: rgba(108, 99, 255, 1);
+}
+
+.btn-secondary {
+    color: white;
+    background-color: rgba(108, 99, 255, 1);
+}
+
+.burger-menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: rgba(108, 99, 255, 1);
+}
+
+.hero-section {
+    margin: 39px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.hero-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 86px;
+    line-height: 88px;
+    color: rgba(47, 46, 65, 1);
+    max-width: 489px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 34px;
+    color: rgba(152, 147, 163, 1);
+    max-width: 489px;
+}
+
+.hero-section figure {
+    max-width: 50%;
+}
+
+.hero-section img {
+    width: 100%;
+}
+
+.partners-section {
+    margin: 47px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners-section-mobile {
+    display: none;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.features-section {
+    margin: 220px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.features-banner-wrapper {
+    width: 600px;
+}
+
+.features-banner-wrapper img {
+    width: 100%;
+}
+
+.features-content {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.features-content h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    line-height: 64px;
+    color: rgba(47, 46, 65, 1);
+}
+
+.features-content p {
+    font-size: 20px;
+    line-height: 34px;
+    color: rgba(152, 147, 163, 1);
+}
+
+.features-content a {
+    color: rgba(47, 46, 65, 1);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.pricing-section {
+    margin: 220px auto 100px;
+}
+
+.pricing-section h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    color: rgba(47, 46, 65, 1);
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.pricing-card {
+    width: 363px;
+    min-height: 421px;
+    padding: 46px 20px;
+    background-color: rgba(236, 235, 255, 0.3);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.plan-name {
+    font-size: 18px;
+    color: rgba(113, 112, 130, 1);
+}
+
+.pricing-card h3 {
+    font-size: 50px;
+    line-height: 56px;
+    color: rgba(47, 46, 65, 1);
+}
+
+.pricing-card h3 span {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.plan-features {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    color: rgba(113, 112, 130, 1);
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.plan-btn {
+    display: block;
+    padding: 16px 30px;
+    border: 1px solid rgba(108, 99, 255, 1);
+    border-radius: 2px;
+    color: rgba(108, 99, 255, 1);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.premium {
+    min-height: 502px;
+    padding: 70px 20px;
+    background-color: rgba(108, 99, 255, 1);
+    gap: 40px;
+}
+
+.premium .plan-name {
+    color: white;
+}
+
+.premium h3 {
+    color: white;
+}
+
+.premium .plan-features {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.premium .plan-btn {
+    width: 186px;
+    background-color: white;
+    border-color: white;
+}
+
+@media (max-width: 1440px) {
+    .hero-content h2 {
+        font-size: 76px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-content h2 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    .pricing-cards {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav, .actions {
+        display: none;
+    }
+
+    .burger-menu-icon {
+        display: flex;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-content h2 {
+        font-size: 70px;
+        max-width: none;
+    }
+
+    .hero-section figure {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .partners-section {
+        display: none;
+    }
+
+    .partners-section-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .row-1, .row-2 {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .features-section {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .features-banner-wrapper {
+        width: 100%;
+    }
+
+    .features-content {
+        max-width: none;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .pricing-card {
+        width: 363px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h2 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .row-1, .row-2 {
+        gap: 20px;
+    }
+
+    .partners-section-mobile img {
+        max-width: 28%;
+    }
+
+    .features-content h4 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .pricing-section h2 {
+        font-size: 42px;
+        margin-bottom: 50px;
+    }
+
+    .pricing-card {
+        width: 100%;
+    }
+}

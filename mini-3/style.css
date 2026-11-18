@@ -1,0 +1,19 @@
+.group__letter {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 8px 16px;
+    background-color: #e2e8f0;
+    font-size: 18px;
+}
+
+.group__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.group__list li {
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
